@@ -48,10 +48,10 @@ export default {
     // Complete path and content type header value
     let contentType = 'text/plain; charset=utf-8';
     if (path.endsWith('.jsonld')) {
-      path = `json/${path}`;
+      path = `schema/${path}`;
       contentType = 'application/ld+json';
     } else if (path.endsWith('.schema.json')) {
-      path = `json/${path}`;
+      path = `schema/${path}`;
       contentType = 'application/schema+json';
     }
 
