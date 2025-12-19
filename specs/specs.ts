@@ -55,7 +55,10 @@ export default {
       contentType = 'application/schema+json';
     }
 
-    const githubUrl = `https://raw.githubusercontent.com/oxa-dev/oxa/${version}/${path}`;
+    // https://raw.githubusercontent.com/oxa-dev/oxa/refs/heads/main/schema/schema.json
+    // https://raw.githubusercontent.com/oxa-dev/oxa/refs/tags/v0.0.0/schema/schema.json
+    // const githubUrl = `https://raw.githubusercontent.com/oxa-dev/oxa/${version}/${path}`;
+    const githubUrl = `https://raw.githubusercontent.com/oxa-dev/oxa/refs/heads/main/schema/schema.json`;
     const file = await fetch(githubUrl);
 
     // If the file wasn't found, return a 404
