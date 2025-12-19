@@ -1,5 +1,5 @@
 {
-  "name": "oxa-dev",
+  "name": "workers",
   "compatibility_date": "2025-12-19",
   "main": "specs/specs.ts"
 }
